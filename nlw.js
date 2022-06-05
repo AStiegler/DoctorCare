@@ -36,10 +36,11 @@ function activateMenuAtCurrentSection(section) {
 }
 
 function showNavOnScroll() {
+  let nav = document.querySelector('#navigation');
   if (scrollY > 0) {
-    navigation.classList.add("scroll");
+    nav.classList.add('scroll')
   } else {
-    navigation.classList.remove("scroll");
+    nav.classList.remove('scroll')
   }
 }
 
